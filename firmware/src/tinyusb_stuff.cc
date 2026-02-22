@@ -111,10 +111,10 @@ char const* string_desc_arr[] = {
 // Invoked when received GET DEVICE DESCRIPTOR
 // Application return pointer to descriptor
 uint8_t const* tud_descriptor_device_cb() {
-    if ((our_descriptor->vid != 0) && (our_descriptor->pid != 0)) {
-        desc_device.idVendor = our_descriptor->vid;
-        desc_device.idProduct = our_descriptor->pid;
-    }
+  // if ((our_descriptor->vid != 0) && (our_descriptor->pid != 0)) {
+  //   desc_device.idVendor = our_descriptor->vid;
+  //   desc_device.idProduct = our_descriptor->pid;
+  // }
     return (uint8_t const*) &desc_device;
 }
 
