@@ -4,6 +4,7 @@ on:
     paths:
       - 'firmware/**'
   workflow_call:
+  workflow_dispatch: # 新增手动触发的指令
 defaults:
   run:
     shell: bash --noprofile --norc -x -e -o pipefail {0}
